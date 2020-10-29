@@ -6,21 +6,17 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i, average	;
-	int sum	;
+	int i	;
+	int score[SIZE]	;
 	int grade[SIZE]	;
 	
-	sum=0	;
+
 	for(i=0; i<SIZE; i++)
-	{
-		
-	printf("학생 성적을 입력하세요: \n")	;
-	scanf("%d", &grade[i])	;
-	sum += grade [i];
-}
+	grade[i] = rand()%100;
+	grade[i]=score[i]	;
 	
-	average = sum/SIZE	;
-	printf("성적평균 : %d\n", average)	;
 	
+	for(i=0;i<SIZE;i++)
+	printf("score[%d]=%d\n",i, score[i])	;
 	return 0;
 }
